@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkoutStyle.css">
+    <script src="checkoutScript.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html"><b>HOME</b></a>
+        <a href="#"><b>ABOUT</b></a>
+        <a href="#"><b>CONTACT</b></a>
+        <a href="#"><b>LOGIN</b></a>
+        <a class="openbtn" onclick="openCheck()"><img id="cart" src="images/cart.png" alt="cart"></a>
+    </div>
+
+    <!-- Checkout Form -->
+    <div id="form">
+        <form name="checkout" onsubmit="return validation();">
+            <fieldset>
+                <!-- Form title -->
+                <legend>Checkout</legend>
+                    <!-- First name -->
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    
+                    <br>
+
+                    <!-- Last name -->
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                    
+                    <br>
+
+                    <!-- Contact number -->
+                    <label for="number">Contact Number</label>
+                    <input type="number" id="number" name="number">
+
+                    <br>
+
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

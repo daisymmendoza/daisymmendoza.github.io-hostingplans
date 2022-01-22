@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Plans</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html"><b>HOME</b></a>
+        <a href="#"><b>ABOUT</b></a>
+        <a href="#"><b>CONTACT</b></a>
+        <a href="#"><b>LOGIN</b></a>
+        <a class="openbtn" onclick="openCheck()"><img id="cart" src="images/cart.png" alt="cart"></a>
+    </div>
+
+    <!-- Heading -->
+    <div class="headings">
+        <h1 class="title">Business Inc.</h1>
+        <h3 class="subtitle">Choose your hosting plan today!</h3>
+    </div>
+
+    <div class="plans">
+        <!-- Basic plan -->
+        <div class="bscplan">
+                <h3 class="plantitle">Basic Plan</h3>
+                <li>Monthly: $3.99</li>
+                <li>Disk Space: 100 GB</li>
+                <li>Data Transfer: 1,000 GB/Mo</li>
+                <li>Site Pages: 10</li>
+            <button class="planbtn" id="planbtnbas" onclick="basic.calcAnnual(.80), basic.summary()">Choose Plan</button>
+        </div>
+
+        <!-- Professional plan -->
+        <div class="profplan">
+                <h3 class="plantitle">Professional Plan</h3>
+                <li>Monthly: $5.99</li>
+                <li>Disk Space: 500 GB</li>
+                <li>Data Transfer: 5,000 GB/Mo</li>
+                <li>Site Pages: 50</li>
+            <button class="planbtn" id="planbtnprof" onclick="prof.calcAnnual(.80), prof.summary()">Choose Plan</button>
+        </div>
+
+        <!-- Ultimate plan -->
+        <div class="ultplan">
+                <h3 class="plantitle">Ultimate Plan</h3>
+                <li>Monthly: $9.99</li>
+                <li>Disk Space: 2,000 GB</li>
+                <li>Data Transfer: 20,000 GB/Mo</li>
+                <li>Site Pages: 500</li>
+            <button class="planbtn" id="planbtnult" onclick="ult.calcAnnual(.80), ult.summary()">Choose Plan</button>
+        </div>
+    </div>
+
+    <!-- Custom plan -->
+    <div class="cstmsec">
+        <h3 class="cstmtitle">Custom Plan</h3>
+        <p id="cstmtxt">Customize your own hosting plan for only $7.99 a month!</p>
+        <br>
+        <br>
+
+        <form name="custom" class="cstmSelect">
+        <div>    
+            <!-- Months -->
+            <label for="mname">Months</label>
+            <select type="text" id="mname" class="mname">
+                <option selected="" value="Default">Select</option>
+                <option value="3">Three</option>
+                <option value="6">Six</option>
+                <option value="12">Twelve</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- Disk Space -->
+            <label for="space">Disk Space</label>
+            <select type="text" id="space" name="space">
+                <option selected="" value="Default">Select</option>
+                <option value="100">100 GB</option>
+                <option value="500">500 GB</option>
+                <option value="2000">2000 GB</option>
+            </select>
+        </div>
+            
+        <div>
+            <!-- Data Transfer -->
+            <label for="data">Data Transfer</label>
+            <select type="text" id="data" name="data">
+                <option selected="" value="Default">Select</option>
+                <option value="1000">1000 GB/Mo</option>
+                <option value="5000">5000 GB/Mo</option>
+                <option value="20000">20000 GB/Mo</option>
+            </select>
+        </div>
+
+        <div>            
+            <!-- Site Pages -->
+            <label for="spname">Site Pages</label>
+            <select type="text" id="spname" name="spname">
+                <option selected="" value="Default">Select</option>
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="500">500</option>
+            </select>
+        </div>
+    </form>
+    <br>
+        <!-- Submit button -->
+        <button class="cstmbtn" onclick="validation()">Choose Plan</button>
+    </div>
+
+    <!-- Checkout sidebar -->
+    <div id="myCheckbar" class="checkbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCheck()">×</a>
+
+        <p id="planName" class="summaryItems">Your cart is empty.</p>
+        <p id="cost" class="summaryItems"></p>
+        <p id="disc" class="summaryItems"></p>
+        <p id="total" class="summaryItems"></p>
+
+        <a href="checkout.html" id="checkbtn">Checkout</a>
+    </div>
+
+<!--
+Color Scheme:
+Beige: DCC7AA
+Orange: F7882F
+Blue: 6B7A8F
+Yellow: F7C331
+
+
+-->
+</body>
+</html>

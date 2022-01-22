@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    background-color: #DCC7AA;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.navbar a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    color: rgb(76, 76, 78);
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ceb89a;
+    /* color: white; */
+}
+
+/* Sidebar */
+.checkbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(190, 176, 160);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.checkbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+}
+
+.checkbar a:hover {
+  color: rgb(83, 83, 83);
+}
+
+.checkbar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #DCC7AA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+#cart {
+    width: 27px;
+    height: 27px;
+    margin-top: -6px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.summaryItems {
+    font-size: 1em;
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+#summary {
+    color: rgb(76, 76, 78);
+}
+
+#checkbtn {
+    margin-left: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding: 5%;
+    background-color: rgb(76, 76, 78);
+    color: white;
+    width: 83px;
+}
+
+#checkbtn:hover {
+    cursor: pointer;
+    background-color: rgb(102, 102, 105);
+}
+/* End of sidebar */
+
+.headings {
+    background-color: #DCC7AA;
+    padding: 100px;
+    margin-bottom: -50px;
+}
+
+.title {
+    text-align: center;
+    color: rgb(76, 76, 78);
+}
+
+.subtitle {
+    text-align: center;
+    color: rgb(76, 76, 78);
+    padding: 10px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.bscplan {
+    width: 23%;
+    background-color: #F7882F;
+    color: white;
+    border-radius: 3%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.profplan {
+    width: 23%;
+    background-color: #6B7A8F;
+    color: white;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.ultplan {
+    width: 23%;
+    background-color: #F7C331;
+    color: white;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.plantitle {
+    text-align: center;
+    /* text-decoration: underline; */
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.planbtn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+    font-size: .9em;
+}
+
+.planbtn:hover {
+    cursor: pointer;
+}
+
+.cstmsec {
+    width: 100%;
+    height: 385px;
+    background-color: #DCC7AA;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.cstmtitle {
+    padding: 20px;
+    font-size: 1.3em;
+    color: rgb(76, 76, 78);
+}
+
+#cstmtxt {
+    color: rgb(76, 76, 78);
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding: 7px 10px 7px 10px;
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+  }
+
+.cstmSelect {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cstmbtn {
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: .7%;
+    text-align: center;
+}
+
+.cstmbtn:hover {
+    cursor: pointer;
+}

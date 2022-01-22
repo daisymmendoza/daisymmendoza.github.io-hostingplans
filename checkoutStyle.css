@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: sans-serif;
+    position: relative;
+    background-color: #DCC7AA;
+}
+
+.navbar {
+    display: flex;
+    background-color: #DCC7AA;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.navbar a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    color: rgb(76, 76, 78);
+    padding: 20px 14px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ceb89a;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #DCC7AA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+#cart {
+    width: 27px;
+    height: 27px;
+    margin-top: -6px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.checkbtn {
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding: 5%;
+    background-color: rgb(76, 76, 78);
+    color: white;
+    margin-left: 30px;
+}
+
+.checkbtn:hover {
+    cursor: pointer;
+    background-color: rgb(102, 102, 105);
+}
+/* End of sidebar */
+
+#form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 40%;
+    margin: auto;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+legend {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+input[type=text], select {
+    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #6B7A8F;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #6B7A8F;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-size: 1em;
+    width: 100%;
+    background-color: #F7C331;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(163, 150, 136);
+}
